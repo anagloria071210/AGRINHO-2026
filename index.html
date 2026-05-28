@@ -1,3 +1,4 @@
+```python
 from weasyprint import HTML
 
 # Definindo o código HTML completo estruturado para o site educativo/informativo
@@ -280,4 +281,168 @@ html_content = """
             page-break-inside: avoid;
         }
 
-        .footer-banner p
+        .footer-banner p {
+            text-align: center;
+            margin: 0;
+            font-size: 10pt;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="hero-banner">
+        <div class="hero-grid">
+            <div class="hero-cell">
+                <div class="hero-title">AgroSustentável Brasil</div>
+                <div class="hero-subtitle">Equilibrando Economia, Tecnologia e Regeneração Ambiental</div>
+                <div class="nav-placeholder">
+                    <span>• HOME</span> <span>• PRODUÇÃO</span> <span>• SUSTENTABILIDADE</span> <span>• DESAFIOS</span> <span>• SOLUÇÕES</span> <span>• INTERATIVO</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p class="intro-text">
+        O agronegócio consolidou-se como o principal motor econômico do Brasil. Contudo, o grande desafio do século XXI reside em transitar de um modelo puramente expansivo para uma liderança baseada na sustentabilidade real. Este portal demonstra como o país pode (e deve) aliar a sua força produtiva à preservação absoluta de seus ecossistemas, utilizando tecnologia de ponta e práticas agrícolas regenerativas.
+    </p>
+
+    <h2>1. O Gigante Econômico e a Necessidade de Evolução</h2>
+    <p>
+        A produção agropecuária brasileira atinge recordes sucessivos de produtividade. O setor atua como estabilizador da balança comercial do país, gerando divisas essenciais para o desenvolvimento de infraestruturas nacionais e empregando milhões de pessoas direta e indiretamente.
+    </p>
+
+    <div class="row-table">
+        <div class="col-cell" style="width: 33%;">
+            <div class="stat-box">
+                <div class="stat-value">23% - 29%</div>
+                <div class="stat-label">Participação Estimada no PIB Nacional</div>
+            </div>
+        </div>
+        <div class="col-cell" style="width: 33%;">
+            <div class="stat-box">
+                <div class="stat-value">~40%</div>
+                <div class="stat-label">Do Total das Exportações Brasileiras</div>
+            </div>
+        </div>
+        <div class="col-cell" style="width: 34%;">
+            <div class="stat-box">
+                <div class="stat-value">Top 1</div>
+                <div class="stat-label">Exportador de Soja, Café e Carne Bovina</div>
+            </div>
+        </div>
+    </div>
+
+    <p>
+        <strong>Mecanização e Genética:</strong> A expansão nas últimas décadas ocorreu principalmente por meio da incorporação de biotecnologia, sementes de alto rendimento e maquinários conectados, permitindo a lógica essencial: <span class="math">P = Q / A</span> (onde o aumento da Produtividade <span class="math">P</span> mitiga a necessidade de abertura de novas Áreas <span class="math">A</span> para a mesma Quantidade produzida <span class="math">Q</span>). Contudo, a simples otimização de insumos tradicionais já não basta para garantir a resiliência climática futura.
+    </p>
+
+    <h2>2. Os Desafios Ambientais Reais (Métricas e Riscos)</h2>
+    <p>
+        Ignorar os impactos ambientais coloca em risco a própria perenidade do agronegócio. A degradação dos ecossistemas afeta o regime de chuvas e reduz a fertilidade natural do solo, gerando prejuízos bilionários imediatos ao produtor.
+    </p>
+
+    <div class="alert-box">
+        <span class="box-title">Desmatamento e Mudança no Uso da Terra</span>
+        <p style="margin:0; font-size:9pt;">A conversão de vegetação nativa em pastagens e lavouras no Cerrado e na Amazônia representa a maior fonte de emissões de Gases de Efeito Estufa (GEE) do Brasil, além de desestruturar microclimas regionais.</p>
+    </div>
+
+    <div class="alert-box">
+        <span class="box-title">Consumo e Escassez de Água Doce</span>
+        <p style="margin:0; font-size:9pt;">A agricultura irrigada responde por cerca de 70% do consumo global de água doce. Sistemas de irrigação ineficientes exacerbam conflitos hídricos e vulnerabilidades em períodos de estiagem prolongada.</p>
+    </div>
+
+    <div class="alert-box">
+        <span class="box-title">Emissões de Gases de Efeito Estufa (GEE)</span>
+        <p style="margin:0; font-size:9pt;">A fermentação entérica da pecuária emite volumes massivos de Metano (<span class="math">CH<sub>4</sub></span>), enquanto o manejo inadequado do solo e fertilizantes nitrogenados liberam Óxido Nitroso (<span class="math">N<sub>2</sub>O</span>), acelerando o aquecimento global.</p>
+    </div>
+
+    <h2>3. A Revolução Tecnológica e Práticas Regenerativas</h2>
+    <p>
+        A resposta para os desafios listados não está no recuo da produção, mas sim na sofisticação científica do campo. As tecnologias de monitoramento associadas às práticas que imitam a natureza criam sistemas circulares de alta eficiência.
+    </p>
+
+    <h3>A. Agricultura de Precisão e Eficiência de Insumos</h3>
+    <p>
+        O uso de sensores locais, dados de satélite e aplicação em taxa variável transforma a lavoura. Em vez de tratar o talhão de forma homogênea, cada planta recebe a dosagem exata necessária.
+    </p>
+    <div style="font-size:9pt; font-weight:bold; color:#4a5568; margin-bottom:2px;">Redução Média de Desperdício de Fertilizantes / Defensivos:</div>
+    <div class="bar-container">
+        <div class="bar-fill" style="width: 30%;"></div>
+    </div>
+
+    <h3>B. Tecnologias de Monitoramento e Automação</h3>
+    <ul>
+        <li><strong>Drones de Alta Resolução:</strong> Identificação precoce de reboleiras de pragas e estresse hídrico, evitando pulverizações em área total.</li>
+        <li><strong>Sensores de Umidade de Solo:</strong> Conectados via IoT, ativam a irrigação automatizada apenas quando o solo atinge o ponto de murcha permanente crítico, gerando economia expressiva de água.</li>
+        <li><strong>Energias Renováveis no Campo:</strong> Substituição de geradores a diesel por matrizes fotovoltaicas nas bombas de irrigação e infraestruturas internas.</li>
+    </ul>
+
+    <h3>C. Práticas Regenerativas e a Nova Fronteira Agro</h3>
+    <p>
+        A transição sustentável baseia-se na recuperação de solos degradados por meio de técnicas consolidadas:
+    </p>
+
+    <div class="solution-box">
+        <span class="box-title">Sistema de Plantio Direto (SPD)</span>
+        <p style="margin:0; font-size:9pt;">O solo nunca fica descoberto. A palhada da cultura anterior protege a terra contra a erosão, preserva a umidade e fixa carbono orgânico no perfil produtivo.</p>
+    </div>
+
+    <div class="solution-box">
+        <span class="box-title">Integração Lavoura-Pecuária-Floresta (ILPF)</span>
+        <p style="margin:0; font-size:9pt;">Consórcio que otimiza a mesma área com grãos, carne/leite e árvores. As árvores fornecem sombra ao gado (bem-estar animal), retêm água e sequestram toneladas de CO₂ equivalente por hectare ao ano.</p>
+    </div>
+
+    <div class="solution-box">
+        <span class="box-title">Bioinsumos e Manejo Integrado (MIP)</span>
+        <p style="margin:0; font-size:9pt;">Uso de bactérias fixadoras de nitrogênio (como o <i>Bradyrhizobium</i>) e fungos controladores de pragas, reduzindo drasticamente a dependência de defensivos químicos de síntese industrial.</p>
+    </div>
+
+    <h2>4. Espaço Interativo: Ferramentas de Conscientização</h2>
+    <p>
+        Abaixo, apresentamos as maquetes operacionais das ferramentas interativas desenvolvidas para engajar produtores, estudantes e o público geral na plataforma online.
+    </p>
+
+    <div class="row-table">
+        <div class="col-cell" style="width: 50%;">
+            <div class="interactive-section">
+                <div class="interactive-title">📊 Calculadora de Impacto Agro</div>
+                <p style="font-size:8.5pt; margin-bottom:8px;">Insira a área da sua propriedade para estimar os ganhos ao migrar para a agricultura de precisão e plantio direto:</p>
+                <div style="background:#ffffff; border:1px solid #cbd5e0; padding:6px; font-size:8.5pt; border-radius:4px; margin-bottom:6px; color:#718096;">
+                    Área simulada: <strong>100 Hectares</strong>
+                </div>
+                <div style="font-size:8.5pt; color:#2d6a4f; font-weight:bold;">
+                    ✓ Economia estimada de Água: ~250.000 Litros/ano<br>
+                    ✓ Carbono Sequestrado: ~120 Toneladas de CO₂eq/ano
+                </div>
+            </div>
+        </div>
+        <div class="col-cell" style="width: 50%;">
+            <div class="interactive-section">
+                <div class="interactive-title">💡 Quiz: Visão de Futuro</div>
+                <p style="font-size:8.5pt; margin-bottom:8px;"><strong>Pergunta:</strong> Qual prática apresenta maior potencial para zerar o balanço de carbono na pecuária extensiva brasileira?</p>
+                <div class="quiz-option">A) Aumento de fertilizantes sintéticos simples.</div>
+                <div class="quiz-option correct">✓ B) Implementação de Sistemas ILPF (Sistemas Silvipastoris).</div>
+                <div class="quiz-option">C) Uso exclusivo de irrigação por aspersão convencional.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-banner">
+        <p>“Um agro forte, tecnológico e sustentável é perfeitamente possível e absolutamente necessário para as próximas gerações.”</p>
+        <span style="font-size: 8pt; display:block; margin-top:5px; color:#d8f3dc; font-weight:normal;">Assine nossa Newsletter para receber relatórios técnicos mensais e atualizações de tecnologias verdes.</span>
+    </div>
+
+</body>
+</html>
+"""
+
+# Nome do arquivo de saída
+output_pdf = "plataforma_agro_sustentavel.pdf"
+
+# Gerando o PDF a partir da string HTML usando WeasyPrint
+HTML(string=html_content).write_pdf(output_pdf)
+print(f"PDF gerado com sucesso: {output_pdf}")
+
+```
