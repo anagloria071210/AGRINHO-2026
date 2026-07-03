@@ -432,6 +432,9 @@ html_content = """
     <div class="footer-banner">
         <p>“Um agro forte, tecnológico e sustentável é perfeitamente possível e absolutamente necessário para as próximas gerações.”</p>
         <span style="font-size: 8pt; display:block; margin-top:5px; color:#d8f3dc; font-weight:normal;">Assine nossa Newsletter para receber relatórios técnicos mensais e atualizações de tecnologias verdes.</span>
+   <img src="assets/agro1.jpg" alt="Imagem 1">
+<img src="assets/ana2.jpg" alt="Imagem 2">
+    
     </div>
 
 </body>
@@ -444,7 +447,5 @@ output_pdf = "plataforma_agro_sustentavel.pdf"
 # Gerando o PDF a partir da string HTML usando WeasyPrint
 HTML(string=html_content).write_pdf(output_pdf)
 print(f"PDF gerado com sucesso: {output_pdf}")
-<img src="assets/agro1.jpg" alt="Imagem 1">
-<img src="assets/ana2.jpg" alt="Imagem 2">
 ```
 
